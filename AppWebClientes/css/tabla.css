@@ -1,0 +1,93 @@
+.tabla{
+	width: 100%;
+	margin:auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.tablax4{
+	float: left;
+	width: 25%;
+	margin-top: 20px;	
+}
+.tablaxd{
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+}
+.caja-precio{
+	border: 1px solid #5c6552;
+	background: #30353c;
+}
+.icono-precio{
+	color: #85c34a;
+	padding-top: 20px;
+	font-size: 3em;
+	padding-bottom: 10px;
+}
+.caja-precio h4{
+	color:#fff;
+}
+/*.caja-precio:hover{
+	border: 5px solid #85c34a;
+}*/
+.precio-1{
+	color: #85c34a;
+	font-size: 50px;
+	font-weight: bold;
+}
+.dolar{
+	font-size: 20px;
+	vertical-align: super;
+}
+.mes{
+	font-size: 10px;
+	color:#999;
+	vertical-align: text-bottom;
+}
+.lista-precios{
+	list-style: none;
+	padding: 20px 0;
+	color:#81867D;
+	padding-bottom: 50px;
+}
+.lista-espacios{
+	padding: 0.25em;
+	font-size: 15px;
+}
+.boton-contratar{
+	margin-bottom: 25px;
+}
+.contratar-a{
+	background: #85c34a;
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px 70px; 
+	letter-spacing: 1px;
+	width: 90%;
+}
+.contratar-a:hover{
+	background: #777;
+}
+.destacado{
+	background-color: #FFF;
+	box-shadow: 0 0 8px rgba(0,0,0,0.9);
+	z-index: 500;
+}
+.destacado h4{
+	color:#30353c;
+	font-size: 30px;
+}
+.destacado .icono-precio{
+	font-size: 4em;
+}
+.destacado .contratar-a{
+	background:#30353c;
+}
+.destacado .contratar-a:hover{
+	background:#777;
+}
+.fa-star{
+	color:#30353c;
+}

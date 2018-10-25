@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>C.O.S.A</title>
+	<link rel="icon" type="image/png" href="../img/omnibus.png" />
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../css/Boostrap/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/estilos.css">
+
+	<link type="text/css" rel="stylesheet" href="../css/slider.css">
+	<link type="text/css" rel="stylesheet" href="../css/animate.css">
+	<link type="text/css" rel="stylesheet" href="../css/redes.css">
+	<link type="text/css" rel="stylesheet" href="../css/iconos.css">
+	<link type="text/css" rel="stylesheet" href="../css/secciones.css">
+	<link type="text/css" rel="stylesheet" href="../css/tabla.css">
+	<link type="text/css" rel="stylesheet" href="../css/formulario.css">
+	<link type="text/css" rel="stylesheet" href="../css/responsive.css">
+
+	<script type="text/javascript" src="../js/vendor/popper.min.js"></script>
+	<script type="text/javascript" src="../js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/internal/reservas.js"></script>
+
+
+</head>
+
+	<body>
+
+		<div id="container">
+
+				
+			<header>
+				<!-- MENU -->
+				<div class="ancho">
+					<div class="logo">
+						<p><a href="index.html">C.O.S.A</a></p>
+					</div>
+					<nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="gestion.html">Gestion</a></li>
+                            <li><a href="horarios.html">Horarios</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="otros.html">Otros</a></li>
+                        </ul>
+					</nav>
+				</div>
+			
+			</header>
+
+
+			<div class="contenedor ancho">
+				
+				<div class="DIVcenter">
+
+
+					<form id="frmSetCi">
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Cedula</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="txtSetCi" placeholder="">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class=" col-sm-5 col-form-label">Tipo de operacion</label>
+							<div class="col-sm-5">
+								<select id="sltTypeOperation" class="custom-select">
+									<option value=""> ----------</option>
+									<option value="NUEVA"> NUEVA </option>
+									<option value="ANULAR">ANULAR</option>
+								</select>
+
+							</div>
+						</div>
+
+						<div class="form-group row">
+
+							<div class="trans" role="group" aria-label="Basic example">
+
+								<input id="btnOkSetCi" class="btn " type="button" value="Aceptar" />
+								<input id="btnCancelSetCi" name="btnCancel" class="btn ml-1 " type="button" value="Cancelar" />
+							</div>
+
+						</div>
+
+					</form>
+
+
+
+					<form id="frmSetData">
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Cedula</label>
+							<div class="col-sm-5">
+								<label  class="col-sm-5 col-form-label" id="lblGetCi" ></label>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Nombre</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="txtSetNameCli" placeholder="Nombre">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Telefono</label>
+							<div class="col-sm-5">
+								<input type="number" class="form-control" id="txtGetTelCli" placeholder="Telefono">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Email</label>
+							<div class="col-sm-5">
+								<input type="email" class="form-control" id="txtGetMailCli" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group row">
+
+							<div class="trans" role="group" aria-label="Basic example">
+
+								<input id="btnOkSetCi" class="btn " type="button" value="Aceptar" />
+								<input id="btnCancelSetCi" name="btnCancel" class="btn ml-1 " type="button" value="Cancelar" />
+							</div>
+
+						</div>
+
+
+
+
+					</form>
+
+					<form id="frmSetReserve">
+
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Fecha del turno</label>
+							<div class="col-sm-6">
+								<input type="date" class="form-control" id="dtSetDtTurn" placeholder="Fecha del turno">
+							</div>
+						</div>
+
+						<div class="form-group row">
+
+
+							<div class="col-sm-5">
+								<label class="col-sm-5 col-form-label">Origen</label>
+
+							</div>
+
+							<div class="col-sm-5">
+								<label class="col-sm-5 col-form-label">Destino</label>
+
+							</div>
+						</div>
+
+						<div class="form-group row">
+
+
+							<div class="col-sm-5">
+								<select id="sltOriginTurn" class="custom-select">
+									
+								</select>
+
+							</div>
+
+							<div class="col-sm-5">
+								<select id="sltDestinyTurn" class="custom-select">
+									
+								</select>
+
+							</div>
+						</div>
+
+					</form>
+
+
+
+
+					<table id="tblGetTurns" class="table">
+
+						<tbody id="tblBodyGetTurns">
+							<tr>
+								<td>  </td>
+								<td>  </td>
+							</tr>
+						</tbody>
+
+
+					</table>
+
+				</div>
+				
+			</div>
+
+			<footer>
+				<div>Todos los derechos reservados 2018</div>
+				<div>www.gereisma.com</div>
+			</footer>
+	<!-- Fin Container -->
+	</div>
+
+
+	</body>
+</html>

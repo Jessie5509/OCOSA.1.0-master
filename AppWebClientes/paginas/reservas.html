@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>C.O.S.A</title>
+	<link rel="icon" type="image/png" href="../img/omnibus.png" />
+
+
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../css/Boostrap/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/estilos.css">
+
+	<link type="text/css" rel="stylesheet" href="../css/slider.css">
+	<link type="text/css" rel="stylesheet" href="../css/animate.css">
+	<link type="text/css" rel="stylesheet" href="../css/redes.css">
+	<link type="text/css" rel="stylesheet" href="../css/iconos.css">
+	<link type="text/css" rel="stylesheet" href="../css/secciones.css">
+	<link type="text/css" rel="stylesheet" href="../css/tabla.css">
+	<link type="text/css" rel="stylesheet" href="../css/formulario.css">
+	<link type="text/css" rel="stylesheet" href="../css/responsive.css">
+
+	<script type="text/javascript" src="../js/vendor/popper.min.js"></script>
+	<script type="text/javascript" src="../js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/internal/reservas.js"></script>
+
+
+</head>
+
+<body>
+
+	<div id="container">
+
+
+		<header>
+			<!-- MENU -->
+			<div class="ancho">
+				<div class="logo">
+					<p><a href="../index.html">C.O.S.A</a></p>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="horarios.html">Horarios</a></li>
+						<li><a href="reservas.html">Reservas</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="otros.html">Otros</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+
+		<div class="contenedor ancho">
+
+			<div class="DIVcenter">
+
+
+				<form id="frmSetCi">
+					<div class="form-group row">
+						<label class="col-sm-5 col-form-label">Cedula</label>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="txtSetCi" pattern="[0-9]{8}" placeholder="Cedula" required />
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class=" col-sm-5 col-form-label">Tipo de operacion</label>
+						<div class="col-sm-5">
+							<select id="sltTypeOperation" class="custom-select">
+								<option value=""> ----------</option>
+								<option value="NUEVA"> NUEVA RESERVA </option>
+								<option value="ANULAR">ANULAR RESERVA</option>
+								<option value="AGREGAREMAIL">AGREGAR EMAIL</option>
+							</select>
+
+						</div>
+					</div>
+
+					<div class="form-group row ">
+						<label class=" col-sm-12 col-form-label error" id="erSetCi"></label>
+					</div>
+
+
+
+					<div class="form-group row">
+
+						<div class="trans" role="group" aria-label="Basic example">
+
+							<input id="btnOkSetCi" class="btn " type="button" value="Aceptar" />
+							<input id="btnCancelSetCi" name="btnCancel" class="btn ml-1 " type="button" value="Cancelar" />
+
+						</div>
+
+					</div>
+
+				</form>
+
+				<div id="divAddReserve">
+
+
+
+
+					<form id="frmSetData">
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Cedula</label>
+							<div class="col-sm-5">
+								<label class="col-sm-5 col-form-label" id="lblGetCi"></label>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Nombre</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="txtSetName" pattern="[a-z A-Z]{4,30}" placeholder="Nombre" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Telefono</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="txtSetTel" pattern="^[0-9]{8,9}$" placeholder="Telefono" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Email (opcional)</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="txtSetMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" title="[a - zA - Z0 -9._ % +-]@[a - zA - Z0 - 9. -].[a - zA - Z]">
+							</div>
+						</div>
+
+						<div class="form-group row ">
+							<label class=" col-sm-12 col-form-label error" id="erSetData"></label>
+						</div>
+
+						<div class="form-group row">
+
+							<div class="trans" role="group" aria-label="Basic example">
+
+								<input id="btnOkSetData" class="btn " type="button" value="Aceptar" />
+								<input id="btnCancelSetData" name="btnCancel" class="btn ml-1 " type="button" value="Cancelar" />
+							</div>
+
+						</div>
+
+
+
+
+					</form>
+
+					<form id="frmSetReserve">
+
+						<div class="form-group row">
+							<label class="col-sm-5 col-form-label">Fecha del turno</label>
+							<div class="col-sm-6">
+								<input type="date" class="form-control" id="dtSetDtTurn" pattern="[0-9]{2}+/[0-9]{2}+/[0-9]{4}" min="" required>
+							</div>
+						</div>
+
+						<div class="form-group row">
+
+
+							<div class="col-sm-5">
+								<label class="col-sm-5 col-form-label">Origen</label>
+
+							</div>
+
+							<div class="col-sm-5">
+								<label class="col-sm-5 col-form-label">Destino</label>
+
+							</div>
+						</div>
+
+						<div class="form-group row">
+
+
+							<div class="col-sm-5">
+								<select id="sltOriginTurn" class="custom-select"></select>
+
+							</div>
+
+							<div class="col-sm-5">
+								<select id="sltDestinyTurn" class="custom-select"></select>
+							</div>
+						</div>
+						<div class="form-group row">
+
+							<div class="col-sm-12">
+								Hora aproximada
+								<select id="sltSetAproxHour" class="custom-select-sm">
+									<option value="EMPTY">  </option>
+									<option value="00:00"> 00:00 </option>
+									<option value="01:00"> 01:00 </option>
+									<option value="02:00"> 02:00 </option>
+									<option value="03:00"> 03:00 </option>
+									<option value="04:00"> 04:00 </option>
+									<option value="05:00"> 05:00 </option>
+									<option value="06:00"> 06:00 </option>
+									<option value="07:00"> 07:00 </option>
+									<option value="08:00"> 08:00 </option>
+									<option value="09:00"> 09:00 </option>
+									<option value="10:00"> 10:00 </option>
+									<option value="11:00"> 11:00 </option>
+									<option value="12:00"> 12:00 </option>
+									<option value="13:00"> 13:00 </option>
+									<option value="14:00"> 14:00 </option>
+									<option value="15:00"> 15:00 </option>
+									<option value="16:00"> 16:00 </option>
+									<option value="17:00"> 17:00 </option>
+									<option value="18:00"> 18:00 </option>
+									<option value="19:00"> 19:00 </option>
+									<option value="20:00"> 20:00 </option>
+									<option value="21:00"> 21:00 </option>
+									<option value="22:00"> 22:00 </option>
+									<option value="23:00"> 23:00 </option>
+								</select>
+
+							</div>
+
+						</div>
+
+						<div class="form-group row">
+
+							<div class="trans" role="group" aria-label="Basic example">
+
+								<input id="btnOkSetReserve" class="btn " type="button" value="Aceptar" />
+								<input id="btnCancelSetReserve" name="btnCancel" class="btn ml-1 " type="button" value="Cancelar" />
+							</div>
+
+						</div>
+
+					</form>
+
+					<div id="divGetTurns">
+
+						<table id="tblGetTurns" class="table">
+
+							<thead id="tblHeadGetTurns">
+								
+							</thead>
+
+							<tbody id="tblBodyGetTurns">
+
+							</tbody>
+
+						</table>
+					</div>
+
+					<div id="divSetAsientos">
+						<table id="tblSetAsientos" class="tabla table-dark table-bordered ">
+
+							<tbody id="tblBodySetAsientos">
+								<tr>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+								</tr>
+
+								<tr>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+									<td>  </td>
+								</tr>
+
+
+								<tr>
+
+									<td>  </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+								</tr>
+								<tr>
+									<td>  </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+									<td> <input type="checkbox" name="chxSetAsiento" value="" /> </td>
+								</tr>
+
+
+
+							</tbody>
+
+						</table>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer>
+			<div>Todos los derechos reservados 2018</div>
+			<div>www.gereisma.com</div>
+		</footer>
+		<!-- Fin Container -->
+	</div>
+
+
+</body>
+</html>

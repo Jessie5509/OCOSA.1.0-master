@@ -1,0 +1,222 @@
+@media only screen and (max-width:505px) {
+
+
+	.btn {
+		font-size: 7px !important;
+		height: auto !important;
+	}
+
+	custom-select {
+		height: auto !important;
+
+	}
+	.red {
+		display: none;
+	}
+	.DIVcenter {
+		width:40% !important;
+	}
+	header {
+		height: 55px;
+	}
+
+	footer {
+		height: 55px;
+		color: blue;
+		font-size: 10px;
+	}
+
+	.contenedor {
+		font-size: 12px;
+		min-height: 425px;
+	}
+
+	.ancho {
+		width: 80%;
+	}
+
+	.logo {
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+		.logo p a {
+			width: 100%;
+			font-size: 30px;
+			margin: 0;
+		}
+
+	nav {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+		nav ul li a {
+			font-size: 7px;
+		}
+
+	.slideInUp {
+		display: none;
+	}
+
+	.letras-slider h1 {
+		font-size: 35px;
+	}
+
+	.columnasx3 {
+		width: 100%;
+	}
+
+	.tablax4 {
+		width: 100%;
+	}
+
+	.tablaxd {
+		width: 100%;
+	}
+
+	.dos-columnas {
+		width: 100%;
+	}
+
+	.formulario {
+		width: 85%;
+		margin: 0;
+	}
+
+	.formu-ti {
+		width: 100%;
+	}
+
+	.caja-1 {
+		width: 100%;
+	}
+
+	.caja-2 {
+		width: 100%;
+	}
+
+	.datos {
+		width: 100%;
+	}
+
+	.correr {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (min-width:505px) and (max-width:1200px) {
+	.red {
+		display: none;
+	}
+
+	header {
+		height: 55px;
+	}
+
+	.contenedor {
+		font-size: 12px;
+	}
+
+	footer {
+		height: 55px;
+		font-size: 12px;
+		color: red;
+	}
+
+	.logo {
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+		.logo p a {
+			width: 100%;
+			font-size: 30px;
+			margin: 0;
+		}
+
+	nav {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+		nav ul li a {
+			font-size: 12px;
+		}
+
+	.letras-slider h1 {
+		font-size: 40px;
+	}
+
+	.letras-slider p {
+		font-size: 15px;
+	}
+
+	.columnasx3 {
+		width: 100%;
+	}
+
+	.tablax4 {
+		width: 100%;
+	}
+
+	.tablaxd {
+		width: 100%;
+	}
+
+	.dos-columnas {
+		width: 100%;
+	}
+
+	.formulario {
+		width: 85%;
+		margin: 0;
+	}
+
+	.formu-ti {
+		width: 100%;
+	}
+
+	.caja-1 {
+		width: 100%;
+	}
+
+	.caja-2 {
+		width: 100%;
+	}
+
+	.datos {
+		width: 100%;
+	}
+
+	.correr {
+		width: 100%;
+	}
+}
+
+@font-face {
+	font-family: rale;
+	src: url(fuentes/Raleway-Regular.ttf);
+}
+
+@media only screen and (max-width:360px) {
+
+	header {
+		height: 90px !important;
+	}
+
+	.contenedor {
+		top: 95px;
+	}
+}

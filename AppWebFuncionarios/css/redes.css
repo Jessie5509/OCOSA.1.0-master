@@ -1,0 +1,60 @@
+.red{
+	position: fixed;
+	top: 200px;
+	z-index: 100;
+	left: 0;
+}
+
+
+#facebook a{
+
+	background: #000000;
+	padding: 5px 20px 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all .4s ease;
+
+}
+#facebook a:hover{
+	background: #000000;
+	padding: 5px 23px 10px 23px;
+}
+#youtube a{
+	background: #000000;
+	padding: 5px 20px 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all .4s ease;
+}
+#youtube a:hover{
+	background: #000000;
+	padding: 5px 23px 10px 23px;
+}
+#twitter a{
+	background: #000000;
+	padding: 5px 20px 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all .4s ease;
+}
+#twitter a:hover{
+	background: #000000;
+
+	padding: 5px 23px 10px 23px;
+}
+#correo a{
+	background: #000000;
+
+	padding: 5px 20px 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all .4s ease;
+}
+#correo a:hover{
+	background: #000;
+	padding: 5px 23px 10px 23px;
+}
